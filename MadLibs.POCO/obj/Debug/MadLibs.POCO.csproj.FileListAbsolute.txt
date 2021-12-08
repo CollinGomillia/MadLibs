@@ -1,0 +1,6 @@
+D:\ElevenFiftySD116\GoldBadge\MadLibs\MadLibs.POCO\obj\Debug\MadLibs.POCO.csprojAssemblyReference.cache
+D:\ElevenFiftySD116\GoldBadge\MadLibs\MadLibs.POCO\obj\Debug\MadLibs.POCO.csproj.CoreCompileInputs.cache
+D:\ElevenFiftySD116\GoldBadge\MadLibs\MadLibs.POCO\bin\Debug\MadLibs.POCO.dll
+D:\ElevenFiftySD116\GoldBadge\MadLibs\MadLibs.POCO\bin\Debug\MadLibs.POCO.pdb
+D:\ElevenFiftySD116\GoldBadge\MadLibs\MadLibs.POCO\obj\Debug\MadLibs.POCO.dll
+D:\ElevenFiftySD116\GoldBadge\MadLibs\MadLibs.POCO\obj\Debug\MadLibs.POCO.pdb

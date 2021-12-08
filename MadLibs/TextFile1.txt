@@ -1,0 +1,39 @@
+﻿
+
+
+		Mad Lib
+
+		4 stories. 
+
+        //tree story
+		user inputs 
+		poco
+		string - month - 1
+		list<string> verb - 5
+		string - place - 1
+		list<string> adjective - 5 
+		string - noun - 1
+		string - color - 1
+		string - exclamation - 1
+		string - holiday - 1
+
+
+		Read (displaying items at their location. displaying list by order [0])
+		(run = 0) -----------Console.WriteLine($"Every {month} we {verb[0]})
+		
+		ui
+		intake data for object
+		poco input = new poco();
+		input.month = Console.Readline();
+
+		how do we add multiple things to a list?
+		List<string> verbs = new List<string>;
+        loop to add to list
+		input.Verb = verbs
+
+
+
+
+
+
+		display data inside story for user
