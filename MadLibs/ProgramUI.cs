@@ -133,7 +133,8 @@ namespace MadLibs
             Console.ReadLine();
             Console.WriteLine($"Every {input.Month} we {input.Verbs[0]} to a tree {input.Places[0]} far away. Not just any {input.Adjectives[0]} farm, a {input.Adjectives[1]} tree {input.Places[0]}. My dad and I {input.Verbs[1]} onto the  ");
 
-
+            Console.ReadLine();
+            Console.Clear();
 
 
             #endregion
@@ -212,20 +213,115 @@ namespace MadLibs
             input.Numbers = number;
 
             Console.Clear();
-            
-            
-                Console.WriteLine($"Every yea, we make {input.Nouns[0]} at Christmas time. \n" +
-                $"{ingVerbInput} has been a tradition since I was a/an {adjInput} kid! \n" +
-                $"{famMember} used to make most of the recipe back the, but I would always help {input.Verbs[0]} {ingredient}. \n" +
-                $"Now that I'm older, I make the entire batch of {input.Nouns[1]} from scratch. \n" +
-                $"All you have to do is mix {input.Nouns[2]} and {input.Nouns[3]} in a bowl until fluffy, and add {input.Nouns[4]}. \n" +
-                $"Don't forget the {input.Nouns[5]}! \n" +
-                $"{input.Verbs[1]} them on a {input.Nouns[6]} and bake them at {input.Numbers[0]} degrees. \n" +
-                $"After {input.Numbers[1]} minutes, you will have the perfect {input.Nouns[7]}!");
+
+
+            Console.WriteLine($"Every yea, we make {input.Nouns[0]} at Christmas time. \n" +
+            $"{ingVerbInput} has been a tradition since I was a/an {adjInput} kid! \n" +
+            $"{famMember} used to make most of the recipe back the, but I would always help {input.Verbs[0]} {ingredient}. \n" +
+            $"Now that I'm older, I make the entire batch of {input.Nouns[1]} from scratch. \n" +
+            $"All you have to do is mix {input.Nouns[2]} and {input.Nouns[3]} in a bowl until fluffy, and add {input.Nouns[4]}. \n" +
+            $"Don't forget the {input.Nouns[5]}! \n" +
+            $"{input.Verbs[1]} them on a {input.Nouns[6]} and bake them at {input.Numbers[0]} degrees. \n" +
+            $"After {input.Numbers[1]} minutes, you will have the perfect {input.Nouns[7]}!");
 
         }
         private void GrinchStory()
         {
+            StoryWords input = new StoryWords();
+            #region
+            int adjectiveCount = 2;
+            int adjectiveDisplayCount = 2;
+
+            List<string> adjectives = new List<string>();
+            for (int i = 0; i < adjectiveCount; i++)
+            {
+                Console.WriteLine($"Please enter {adjectiveDisplayCount} adjectives!");
+                string userInput = Console.ReadLine();
+                adjectives.Add(userInput);
+                adjectiveDisplayCount -= 1;
+            }
+            input.Adjectives = adjectives;
+
+            int colorCount = 2;
+            int colorDisplayCount = 2;
+
+            List<string> colors = new List<string>();
+            for (int i = 0; i < colorCount; i++)
+            {
+                Console.WriteLine($"Please enter {colorDisplayCount} colors!");
+                string userInput = Console.ReadLine();
+                colors.Add(userInput);
+                colorDisplayCount -= 1;
+            }
+            input.Color = colors;
+
+            Console.WriteLine("Enter a animal!");
+            input.Animal = Console.ReadLine();
+
+            int verbCount = 1;
+            int verbDisplayCount = 1;
+
+            List<string> verbs = new List<string>();
+            for (int i = 0; i < verbCount; i++)
+            {
+                Console.WriteLine($"Please enter {verbDisplayCount} verb!");
+                string userInput = Console.ReadLine();
+                verbs.Add(userInput);
+                verbDisplayCount -= 1;
+            }
+            input.Verbs = verbs;
+
+            int nounCount = 1;
+            int nounDisplayCount = 1;
+            List<string> Nouns = new List<string>();
+            for (int i = 0; i < nounCount; i++)
+            {
+                Console.WriteLine($"Please enter {nounDisplayCount} nouns!");
+                string userInput = Console.ReadLine();
+                Nouns.Add(userInput);
+                nounDisplayCount -= 1;
+            }
+            input.Nouns = Nouns;
+
+            int IngCount = 1;
+            int IngDisplayCount = 1;
+            List<string> IngVerb = new List<string>();
+            for (int i = 0; i < IngCount; i++)
+            {
+                Console.WriteLine($"Please enter {IngDisplayCount} verbs ending in ing!");
+                string userInput = Console.ReadLine();
+                IngVerb.Add(userInput);
+                IngDisplayCount -= 1;
+            }
+            input.IngVerb = IngVerb;
+
+            int PluralCount = 3;
+            int PluralDisplayCount = 3;
+            List<string> PluralNouns = new List<string>();
+            for (int i = 0; i < PluralCount; i++)
+            {
+                Console.WriteLine($"Please enter {PluralDisplayCount} plural nouns!");
+                string userInput = Console.ReadLine();
+                PluralNouns.Add(userInput);
+                PluralDisplayCount -= 1;
+            }
+            input.PluralNouns = PluralNouns;
+            #endregion
+
+            #region
+            Console.WriteLine("Press any button to read your story");
+            Console.ReadLine();
+            Console.WriteLine($"The Grinch is a(n) {input.Adjectives[0]} {input.Color[0]} creature with {input.Color[1]} eyes who does not like Christmas cheer.\n" +
+                $" When he sees people celebrating Christmas, it makes him {input.Adjectives[1]}.\n" +
+                $" He and his {input.Animal} Max try to {input.Verbs[0]} Christmas for people in the town of {input.Nouns[0]}-ville \n" +
+                $" by their Christmas {input.PluralNouns[0]}. When the people \n" +
+                $" still have Christmas cheer, even without {input.PluralNouns[1]}, the Grinch decides to return the {input.PluralNouns[2]} and celebrates \n" +
+                $" Christmas after all. ");
+
+            Console.ReadLine();
+            Console.Clear();
+            #endregion
+
         }
         private void NorthPoleStory()
         {
