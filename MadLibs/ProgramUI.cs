@@ -325,6 +325,75 @@ namespace MadLibs
         }
         private void NorthPoleStory()
         {
+            StoryWords input = new StoryWords();
+
+            List<string> pluralNouns = new List<string>();
+            List<string> adjectives = new List<string>();
+            List<string> verbs = new List<string>();
+
+            Console.Clear();
+            int pluralNounCount = 5;
+            int pluralDisplayCount = 5;
+
+            for (int i = 0; i < pluralNounCount; i++)
+            {
+                Console.WriteLine($"Please enter 5 plural nouns. \n" +
+                    $"You have {pluralDisplayCount} plural nouns left to enter.");
+                string pluralUserInput = Console.ReadLine();
+                pluralNouns.Add(pluralUserInput);
+                pluralDisplayCount -= 1;
+                Console.Clear();
+            }
+            input.PluralNouns = pluralNouns;
+
+            int adjCount = 2;
+            int adjDisplayCount = 2;
+
+            for (int i = 0; i < adjCount; i++)
+            {
+                Console.WriteLine($"Please enter 2 adjectives. \n" +
+                    $"You have {adjDisplayCount} adjectives left to enter.");
+                string adjUserInput = Console.ReadLine();
+                adjectives.Add(adjUserInput);
+                adjDisplayCount -= 1;
+                Console.Clear();
+            }
+            input.Adjectives = adjectives;
+
+            int verbCount = 4;
+            int verbDisplayCount = 4;
+
+            for (int i = 0; i < verbCount; i++)
+            {
+                Console.WriteLine($"Please enter 2 verbs. \n" +
+                    $"You have {verbDisplayCount} verbs left to enter.");
+                string verbUserInput = Console.ReadLine();
+                verbs.Add(verbUserInput);
+                verbDisplayCount -= 1;
+                Console.Clear();
+            }
+            input.Verbs = verbs;
+
+            Console.Clear();
+            Console.WriteLine("Please enter a number.");
+            string userNumber = Console.ReadLine();
+
+            Console.Clear();
+            Console.WriteLine("Please enter a noun.");
+            string userNoun = Console.ReadLine();
+
+            Console.Clear();
+            Console.WriteLine("Please enter an animal.");
+            string userAnimal = Console.ReadLine();
+
+            Console.Clear();
+            Console.WriteLine($"Santa, Mrs. Claus, and the {input.PluralNouns[0]} live at the North Pole. \n" +
+                $"The weather is always {input.Adjectives[0]} there, but {input.PluralNouns[1]} {input.Verbs[0]} toys for Santa to {input.Verbs[1]} \n" +
+                $"to children on Christams, so holiday cheer lastas year-round there. \n" +
+                $"There's no land at the North Pole; instead there is a {userNumber} inch thick sheet of {userNoun} there, \n {input.Adjectives[1]} enough to hold Santa's Village!" +
+                $"The {input.PluralNouns[2]} help load Santa's sleight with {input.PluralNouns[3]} and Santa's {userAnimal} {input.Verbs[1]} his sleigh \n" +
+                $"on Christmas Eve to {input.Verbs[2]} {input.PluralNouns[4]} to children around the world.");
+
         }
 
 
