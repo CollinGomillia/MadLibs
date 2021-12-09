@@ -14,12 +14,15 @@ namespace MadLibs
 
 
         private bool _isRunning = true;
+        
+
         public void Run()
         {
             while (_isRunning)
             {
                 RunMenu();
             }
+            
         }
 
         private void RunMenu()
@@ -51,19 +54,23 @@ namespace MadLibs
                     case "4":
                         NorthPoleStory();
                         break;
-                    //
                     case "99":
-                        isAppRunning = false;
                         Console.WriteLine("Thank you for playing Christmas MadLibs!!!");
+                        _isRunning = false;
+                        System.Environment.Exit(0);
+                        
+
                         break;
                     default:
-                        Console.WriteLine("Please Choose one of the options.");
+                        Console.WriteLine("Choose an option....");
                         break;
-                        //
+                        
                 }
 
             }
         }
+
+       
 
         private void ChristmasTreeStory()
         {
