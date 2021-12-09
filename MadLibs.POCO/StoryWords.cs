@@ -22,7 +22,7 @@ namespace MadLibs.POCO
         public List<string> Color { get; set; }
         public List<string> IngVerb { get; set; }
         public List<string> PluralNouns { get; set; }
-        public List<int> Numbers { get; set; }
+        public List<string> Numbers { get; set; }
         
         public StoryWords( ){ }
     }

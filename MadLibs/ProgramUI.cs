@@ -144,6 +144,85 @@ namespace MadLibs
 
         private void ChristmasBakingStory()
         {
+            StoryWords input = new StoryWords();
+
+            List<string> nouns = new List<string>();
+            List<string> verbs = new List<string>();
+            List<string> number = new List<string>();
+
+            int nounCount = 8;
+            int nounDisplayCount = 8;
+
+            for (int i = 0; i < nounCount; i++)
+            {
+                Console.WriteLine($"Please enter 8 nouns. \n" +
+                    $"You have {nounDisplayCount} nouns left to enter.");
+                string nounUserInput = Console.ReadLine();
+                nouns.Add(nounUserInput);
+                nounDisplayCount -= 1;
+                Console.Clear();
+            }
+            input.Nouns = nouns;
+
+            Console.Clear();
+            Console.WriteLine("Please enter a verb ending in ING.");
+            string ingVerbInput = Console.ReadLine();
+
+            Console.Clear();
+            Console.WriteLine("Please enter an adjective.");
+            string adjInput = Console.ReadLine();
+
+            Console.Clear();
+            Console.WriteLine("Please enter a family member.");
+            string famMember = Console.ReadLine();
+
+            Console.Clear();
+            int verbCount = 2;
+            int verbDisplayCount = 2;
+
+            for (int i = 0; i < verbCount; i++)
+            {
+                Console.WriteLine($"Please enter 2 verbs. \n" +
+                    $"You have {verbDisplayCount} verbs left to enter.");
+                string verbUserInput = Console.ReadLine();
+                verbs.Add(verbUserInput);
+                verbDisplayCount -= 1;
+                Console.Clear();
+            }
+            input.Verbs = verbs;
+
+            Console.Clear();
+            Console.WriteLine("Please enter an ingredient.");
+            string ingredient = Console.ReadLine();
+
+            Console.Clear();
+
+            int numberCount = 2;
+            int numberDisplayCount = 2;
+
+            for (int i = 0; i < numberCount; i++)
+            {
+                Console.WriteLine($"Please enter 2 numbers. \n" +
+                    $"You have {numberDisplayCount} numbers left to enter.");
+                string numberUserInput = Console.ReadLine();
+                number.Add(numberUserInput);
+                numberDisplayCount -= 1;
+                Console.Clear();
+            }
+            input.Numbers = number;
+
+            Console.Clear();
+            
+            
+                Console.WriteLine($"Every yea, we make {input.Nouns[0]} at Christmas time. \n" +
+                $"{ingVerbInput} has been a tradition since I was a/an {adjInput} kid! \n" +
+                $"{famMember} used to make most of the recipe back the, but I would always help {input.Verbs[0]} {ingredient}. \n" +
+                $"Now that I'm older, I make the entire batch of {input.Nouns[1]} from scratch. \n" +
+                $"All you have to do is mix {input.Nouns[2]} and {input.Nouns[3]} in a bowl until fluffy, and add {input.Nouns[4]}. \n" +
+                $"Don't forget the {input.Nouns[5]}! \n" +
+                $"{input.Verbs[1]} them on a {input.Nouns[6]} and bake them at {input.Numbers[0]} degrees. \n" +
+                $"After {input.Numbers[1]} minutes, you will have the perfect {input.Nouns[7]}!");
+
         }
         private void GrinchStory()
         {
