@@ -168,7 +168,8 @@ namespace MadLibs
                 $"Off we {input.Verbs[3]}, saw in hand to {input.Verbs[4]} this year's {input.Nouns[2]} down.\n" +
                 $" {input.Exclamation} it's {input.Holiday} finally!\n");
 
-
+            Console.ReadLine();
+            Console.Clear();
 
 
             #endregion
@@ -247,16 +248,16 @@ namespace MadLibs
             input.Numbers = number;
 
             Console.Clear();
-            
-            
-                Console.WriteLine($"Every yea, we make {input.Nouns[0]} at Christmas time. \n" +
-                $"{ingVerbInput} has been a tradition since I was a/an {adjInput} kid! \n" +
-                $"{famMember} used to make most of the recipe back the, but I would always help {input.Verbs[0]} {ingredient}. \n" +
-                $"Now that I'm older, I make the entire batch of {input.Nouns[1]} from scratch. \n" +
-                $"All you have to do is mix {input.Nouns[2]} and {input.Nouns[3]} in a bowl until fluffy, and add {input.Nouns[4]}. \n" +
-                $"Don't forget the {input.Nouns[5]}! \n" +
-                $"{input.Verbs[1]} them on a {input.Nouns[6]} and bake them at {input.Numbers[0]} degrees. \n" +
-                $"After {input.Numbers[1]} minutes, you will have the perfect {input.Nouns[7]}!");
+
+
+            Console.WriteLine($"Every yea, we make {input.Nouns[0]} at Christmas time. \n" +
+            $"{ingVerbInput} has been a tradition since I was a/an {adjInput} kid! \n" +
+            $"{famMember} used to make most of the recipe back the, but I would always help {input.Verbs[0]} {ingredient}. \n" +
+            $"Now that I'm older, I make the entire batch of {input.Nouns[1]} from scratch. \n" +
+            $"All you have to do is mix {input.Nouns[2]} and {input.Nouns[3]} in a bowl until fluffy, and add {input.Nouns[4]}. \n" +
+            $"Don't forget the {input.Nouns[5]}! \n" +
+            $"{input.Verbs[1]} them on a {input.Nouns[6]} and bake them at {input.Numbers[0]} degrees. \n" +
+            $"After {input.Numbers[1]} minutes, you will have the perfect {input.Nouns[7]}!");
 
         }
         private void GrinchStory()
@@ -340,7 +341,9 @@ namespace MadLibs
                 PluralDisplayCount -= 1;
             }
             input.PluralNouns = PluralNouns;
+            #endregion
 
+            #region
             Console.WriteLine("Press any button to read your story");
             Console.ReadLine();
             Console.WriteLine($"The Grinch is a(n) {input.Adjectives[0]} {input.Color[0]} creature with {input.Color[1]} eyes who does not like Christmas cheer.\n" +
@@ -352,8 +355,8 @@ namespace MadLibs
 
             Console.ReadLine();
             Console.Clear();
-
             #endregion
+
         }
         private void NorthPoleStory()
         {
