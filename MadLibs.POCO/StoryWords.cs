@@ -25,6 +25,4 @@ namespace MadLibs.POCO
         
         public StoryWords( ){ }
     }
-
-    
 }
